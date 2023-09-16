@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #faffe8  ;
 }
 
 h1 {
@@ -64,6 +65,7 @@ body {
   #navbar li{
     list-style: none;
     padding: 0 20px;
+    position: relative;
     font-family: "SportsWorld";
   }
 
@@ -75,11 +77,34 @@ body {
     transition: 0.3s ease;
   }
 
-  #navbar li a:hover {
+  #navbar li a:hover,
+  #navbar li a.active {
     color: #d96e30;
+  }
+
+  #navbar li a.active::after,
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #d96e30;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
   }
 
   .logo {
     height: 150px;
-    width: 150px ;
+    width: 150px;
   } 
+
+  /* Home Page */
+
+  #hero {
+    background-image: url("img/mécanicien.png ");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+  }

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #faffe8  ;
+
 }
 
 h1 {
@@ -52,8 +52,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #faffe8;
-    box-shadow: 0 5px 15px #7d322b;
+    background: #d9d9d9;
+    box-shadow: 0 5px 15px #a6a6a6;
     z-index: 999;
     position: sticky;
     top: 0;
@@ -77,13 +77,13 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #7d322b;
+    color: black;
     transition: 0.3s ease;
   }
 
   #navbar li a:hover,
   #navbar li a.active {
-    color: #d96e30;
+    color: #004aad;
   }
 
   #navbar li a.active::after,
@@ -91,7 +91,7 @@ body {
     content: "";
     width: 30%;
     height: 2px;
-    background: #d96e30;
+    background: #004aad;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -105,7 +105,7 @@ body {
   /* Home Page */
 
   #hero {
-    background-image: url("img/mécanicien.png ");
+    background-image: url("img/mecano.png ");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -122,13 +122,13 @@ body {
   }
 
   #hero h1{
-    color: #7d322b;
+    color: #004aad;
   }
 
   #hero button {
     background-image: url("img/button.png");
     background-color: transparent;
-    color: #7d322b;
+    color: #004aad;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ body {
     line-height: 1px;
     border-radius: 4px;
     color: #465b52;
-    background-color: #d96e30;
+    background-color: #004aad;
   }
 
   #feature .fe-box:nth-child(2) h6 {
@@ -174,4 +174,68 @@ body {
   #feature .fe-box img {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  #product1 {
+    text-align: center;
+  }
+
+  #product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  #product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #004aad;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+  }
+
+  #product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+   
+  #product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+  }
+
+  #product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+  }
+
+  #product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+  }
+
+  #product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+  }
+
+  #product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #004aad;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
   }

@@ -327,6 +327,7 @@ body {
   }
 
   /* Start Media Query */
+
    @media (max-width: 799px) {
     #navbar {
       display: flex;
@@ -387,6 +388,7 @@ body {
    }
 
    @media (max-width: 477px) {
+   
     #header {
       padding: 10px 30px;
     }
@@ -411,6 +413,10 @@ body {
     #prodetails .single-pro-image {
       width: 100%;
       margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+      width: 100%;
     }
    }
 
@@ -460,7 +466,7 @@ body {
    }
 
    #prodetails .single-pro-image {
-    width: 40%;
+    width: 45%;
     margin-right: 50px;
    }
 

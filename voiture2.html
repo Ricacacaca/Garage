@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage V. Parrot</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/9c6811cb06465823bae18d5db917dac0?family=SportsWorld" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="img/Logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a  class="active" href="vehicules.html">Nos Véhicules</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/cars/car2-1.jpeg" width="100%" id="mainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/cars/car2-1.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/cars/car2-2.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/cars/car2-3.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/cars/car2-4.jpeg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Accueil / Nos Véhicules</h6>
+            <h4>Audi A1 • 2018 • 66582 km • Essence </h4>
+            <h2>14 990 €</h2>
+            <h4>Description</h4>
+            <span>Audi A1 Sportback 1.0 TFSI 95ch ultra Ambiente citadine, blanc, première mise en circulation le 17/08/2018, garantie 3 mois.</span>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Adresse :</strong> 3 Rue Edmond de Planet, 31000 Toulouse, France</p>
+            <p><strong>Téléphone :</strong> +33 5 61 21 81 15</p>
+        </div>
+
+        <div class="col" class="hour">
+            <h4>Horaires</h4>
+            <p><strong>Lundi :</strong> Fermé</p>
+            <p><strong>Mardi :</strong> 07:30-12:00 / 14:00-19:00</p>
+            <p><strong>Mercredi :</strong> 07:30-12:00 / 14:00-19:00</p>
+            <p><strong>Jeudi :</strong> 07:30-12:00 / 14:00-19:00</p>
+            <p><strong>Vendredi :</strong> 07:30-12:00 / 14:00-19:00</p>
+            <p><strong>Samedi :</strong> 07:30-12:00 / 14:00-19:00</p>
+            <p><strong>Dimanche :</strong> Fermé</p>
+        </div>
+    </footer>
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function(){
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>  
